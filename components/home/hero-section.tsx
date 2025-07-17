@@ -3,6 +3,22 @@ import SplitTextCustom from "../shared/split-text-custom";
 import BlurTextCustom from "../shared/blur-text-custom";
 import MeguminAvatar from "../shared/megumin-avatar";
 import ExplosionLottie from "../shared/explosion-effect-wrapper";
+import MasonryGrid from "../shared/masonry-grid";
+
+const items = [
+    {
+        id: "1",
+        img: "/images/bg/megumin-bg.webp",
+        url: "/images/bg/megumin-bg.webp",
+        height: 400,
+    },
+    {
+        id: "2",
+        img: "/images/bg/megumin-bg.webp",
+        url: "/images/bg/megumin-bg.webp",
+        height: 250,
+    },
+];
 
 export default function HeroSection() {
     return (
@@ -15,6 +31,10 @@ export default function HeroSection() {
                 <SplitTextCustom text="MEGUMINE" />
 
                 <BlurTextCustom text="Megumine is My Istri" showAfter={400} />
+
+                <div className="w-full">
+                    <MasonryGrid items={items} showAfter={1000} />
+                </div>
             </div>
         </section>
     )
