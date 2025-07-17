@@ -1,7 +1,9 @@
+import HeroSection from "@/components/home/hero-section";
+
 export default function Home() {
   return (
-    <main>
-      <h1>Megumine</h1>
-    </main>
+    <main className="flex flex-col">
+      <HeroSection />
+    </main >
   );
 }
