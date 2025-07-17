@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import BlurText from "../react-bits/TextAnimations/BlurText/BlurText";
+import { motion } from "framer-motion";
 
 type Props = {
     text: string;
@@ -24,12 +25,25 @@ export default function BlurTextCustom({ text, showAfter = 0 }: Props) {
     if (!shouldShow) return null
 
     return (
-        <BlurText
-            text={text}
-            delay={30}
-            animateBy="letters"
-            direction="bottom"
-            className="text-2xl mb-8"
-        />
+        <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+            <div className="w-full h-fit max-w-180 px-3 py-2 bg-primary/50 text-white rounded-md">
+                {text.split('\n\n').map((paragraph, idx) => (
+                    <p key={idx} className="mb-2">
+                        <BlurText
+                            text={paragraph}
+                            delay={10}
+                            animateBy="words"
+                            direction="bottom"
+                            className="text-1xl leading-relaxed"
+                        />
+                    </p>
+                ))}
+            </div>
+        </motion.div>
+
     )
 }

@@ -4,6 +4,9 @@ import BlurTextCustom from "../shared/blur-text-custom";
 import MeguminAvatar from "../shared/megumin-avatar";
 import ExplosionLottie from "../shared/explosion-effect-wrapper";
 import MasonryGrid from "../shared/masonry-grid";
+import { CardHeader, CardTitle } from "../ui/card";
+import FadeInCard from "../animations/fade-in-card";
+import { meguminText } from "@/constants/megumin";
 
 const items = [
     {
@@ -30,11 +33,17 @@ export default function HeroSection() {
             <div className="max-w-5xl mx-auto w-full pt-10 flex flex-col gap-2 items-start min-h-svh">
                 <SplitTextCustom text="MEGUMINE" />
 
-                <BlurTextCustom text="Megumine is My Istri" showAfter={400} />
+                <FadeInCard >
+                    <CardHeader className="p-0">
+                        <CardTitle>『この素晴らしい世界に祝福を！』</CardTitle>
+                    </CardHeader>
+                </FadeInCard>
 
-                <div className="w-full">
+                <BlurTextCustom text={meguminText} showAfter={400} />
+
+                {/* <div className="w-full">
                     <MasonryGrid items={items} showAfter={1000} />
-                </div>
+                </div> */}
             </div>
         </section>
     )
