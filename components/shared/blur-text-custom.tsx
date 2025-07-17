@@ -1,3 +1,5 @@
+"use client"
+
 import { useEffect, useState } from "react";
 import BlurText from "../react-bits/TextAnimations/BlurText/BlurText";
 

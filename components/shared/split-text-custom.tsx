@@ -1,3 +1,5 @@
+"use client"
+
 import { useEffect, useState } from "react";
 import SplitText from "../react-bits/TextAnimations/SplitText/SplitText"
 
