@@ -32,7 +32,7 @@ export default function BlurTextCustom({ text, showAfter = 0 }: Props) {
         >
             <div className="w-full h-fit max-w-180 px-3 py-2 bg-primary/50 text-white rounded-md">
                 {text.split('\n\n').map((paragraph, idx) => (
-                    <div key={idx} className="mb-2">
+                    <div key={idx} className="-mb-1">
                         <BlurText
                             text={paragraph}
                             delay={10}
