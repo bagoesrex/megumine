@@ -1,5 +1,5 @@
 /*
-	Installed from https://reactbits.dev/ts/tailwind/
+  Installed from https://reactbits.dev/ts/tailwind/
 */
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
@@ -32,8 +32,8 @@ const SplitText: React.FC<SplitTextProps> = ({
   splitType = "chars",
   from = { opacity: 0, y: 40 },
   to = { opacity: 1, y: 0 },
-  threshold = 0.1,
-  rootMargin = "-100px",
+  threshold = 0.2,
+  rootMargin = "0px",
   textAlign = "center",
   onLetterAnimationComplete,
 }) => {
@@ -120,7 +120,7 @@ const SplitText: React.FC<SplitTextProps> = ({
       },
     });
 
-    tl.set(targets, { ...from, immediateRender: false, force3D: true });
+    tl.set(targets, { ...from, immediateRender: true, force3D: true });
     tl.to(targets, {
       ...to,
       duration,

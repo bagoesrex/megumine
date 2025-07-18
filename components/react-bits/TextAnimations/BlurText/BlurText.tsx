@@ -1,7 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /*
-	Installed from https://reactbits.dev/ts/tailwind/
+  Installed from https://reactbits.dev/ts/tailwind/
 */
+
+"use client"
 
 import { motion, Transition } from "framer-motion";
 import { useEffect, useRef, useState, useMemo } from "react";
@@ -43,7 +45,7 @@ const BlurText: React.FC<BlurTextProps> = ({
   className = "",
   animateBy = "words",
   direction = "top",
-  threshold = 0.1,
+  threshold = 0.5,
   rootMargin = "0px",
   animationFrom,
   animationTo,
