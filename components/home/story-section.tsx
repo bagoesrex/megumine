@@ -1,5 +1,8 @@
 import BackgroundImage from "../shared/background-image";
 import SplitTextCustom from "../shared/split-text-custom";
+import BlurTextCustom from "../shared/blur-text-custom";
+
+import { meguminText } from "@/constants/megumin";
 
 export default function StorySection() {
     return (
@@ -9,6 +12,7 @@ export default function StorySection() {
             <div className="max-w-5xl mx-auto w-full pt-10 flex flex-col gap-2 items-start min-h-svh">
                 <SplitTextCustom text="MY MINE's STORY" />
 
+                <BlurTextCustom text={meguminText} showAfter={400} />
             </div>
         </section>
     )

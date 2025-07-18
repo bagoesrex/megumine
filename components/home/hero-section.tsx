@@ -1,12 +1,10 @@
 import BackgroundImage from "../shared/background-image";
 import SplitTextCustom from "../shared/split-text-custom";
-import BlurTextCustom from "../shared/blur-text-custom";
 import MeguminAvatar from "../shared/megumin-avatar";
 import ExplosionLottie from "../shared/explosion-effect-wrapper";
 import MasonryGrid from "../shared/masonry-grid";
 import { CardHeader, CardTitle } from "../ui/card";
 import FadeInCard from "../animations/fade-in-card";
-import { meguminText } from "@/constants/megumin";
 
 const items = [
     {
@@ -17,6 +15,18 @@ const items = [
     },
     {
         id: "2",
+        img: "/images/bg/megumin-bg.webp",
+        url: "/images/bg/megumin-bg.webp",
+        height: 250,
+    },
+    {
+        id: "3",
+        img: "/images/bg/megumin-bg.webp",
+        url: "/images/bg/megumin-bg.webp",
+        height: 400,
+    },
+    {
+        id: "4",
         img: "/images/bg/megumin-bg.webp",
         url: "/images/bg/megumin-bg.webp",
         height: 250,
@@ -39,11 +49,9 @@ export default function HeroSection() {
                     </CardHeader>
                 </FadeInCard>
 
-                <BlurTextCustom text={meguminText} showAfter={400} />
-
-                {/* <div className="w-full">
-                    <MasonryGrid items={items} showAfter={1000} />
-                </div> */}
+                <div className="w-[65%]">
+                    <MasonryGrid items={items} />
+                </div>
             </div>
         </section>
     )

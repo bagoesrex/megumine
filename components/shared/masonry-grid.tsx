@@ -33,8 +33,8 @@ export default function MasonryGrid({ items, showAfter = 0 }: Props) {
     return (
         <Masonry
             items={items}
-            ease="sine.out"
-            duration={1}
+            ease="power3.out"
+            duration={0.6}
             stagger={0.05}
             animateFrom="bottom"
             scaleOnHover={true}
