@@ -40,7 +40,7 @@ export default function HeroSection() {
             <MeguminAvatar />
             <ExplosionLottie />
 
-            <div className="max-w-5xl mx-auto w-full pt-10 flex flex-col gap-2 items-start min-h-svh">
+            <div className="max-w-5xl mx-auto w-full py-10 flex flex-col gap-2 items-start min-h-svh">
                 <SplitTextCustom text="MEGUMINE" />
 
                 <FadeInCard >
