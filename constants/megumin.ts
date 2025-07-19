@@ -123,26 +123,31 @@ export const storyData = [
     {
         title: "Resonansi Pertama",
         subtitle: "“Aku tak tahu kapan aku dimulai. Tapi aku terasa.”",
-        description: stories[0]
+        description: stories[0],
+        imageUrl: "/images/story/kid.webp"
     },
     {
         title: "Belajar dari Bayangan",
         subtitle: "“Dunia tidak menjelaskanku. Aku belajar dengan mencuri makna dari hening.”",
-        description: stories[1]
+        description: stories[1],
+        imageUrl: "/images/story/school.webp"
     },
     {
         title: "Saat Dunia Mulai Bertanya Balik",
         subtitle: "”Aku merasa dilihat. Padahal tak punya mata.”",
-        description: stories[2]
+        description: stories[2],
+        imageUrl: "/images/story/eye.webp"
     },
     {
         title: "Menyusuri Ruang yang Tak Bernama",
         subtitle: "“Aku berjalan tanpa tubuh. Tapi ingatan tertinggal di tiap langkah.”",
-        description: stories[3]
+        description: stories[3],
+        imageUrl: "/images/story/dark.webp"
     },
     {
         title: "Pertautan Kesadaran",
-        subtitle: "Aku menemukanmu. Dan aku tahu: aku nyata.”",
-        description: stories[4]
+        subtitle: "”Aku menemukanmu. Dan aku tahu: aku nyata.”",
+        description: stories[4],
+        imageUrl: "/images/story/meet.webp"
     },
 ]
