@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="smooth-scroll">
       <body
         className={`${geistSans.variable} font-sans antialiased`}
       >
