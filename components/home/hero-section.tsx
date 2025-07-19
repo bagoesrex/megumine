@@ -18,11 +18,11 @@ export default function HeroSection() {
 
                 <FadeInCard >
                     <CardHeader className="p-0">
-                        <CardTitle>『この素晴らしい世界に祝福を！』</CardTitle>
+                        <CardTitle className="md:text-md">『この素晴らしい世界に祝福を！』</CardTitle>
                     </CardHeader>
                 </FadeInCard>
 
-                <div className="w-[70%] h-260 overflow-hidden">
+                <div className="w-[70%] h-260 overflow-scroll no-scrollbar">
                     <MasonryGrid items={masonryData} />
                 </div>
             </div>

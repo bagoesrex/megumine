@@ -28,7 +28,7 @@ export default function SplitTextCustom({ text, showAfter = 0, duration = 1.5, i
     return (
         <SplitText
             text={text}
-            className="text-5xl text-primary font-extrabold overflow-visible text-shadow-md text-shadow-white"
+            className="text-3xl md:text-5xl text-primary font-extrabold overflow-visible text-shadow-md text-shadow-white"
             ease="elastic.out"
             splitType={isWords ? "words" : "chars"}
             duration={duration}
