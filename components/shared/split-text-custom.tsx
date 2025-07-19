@@ -7,7 +7,7 @@ type Props = {
     text: string;
     showAfter?: number;
     duration?: number;
-    isWords: Boolean;
+    isWords: boolean;
 };
 
 export default function SplitTextCustom({ text, showAfter = 0, duration = 1.5, isWords = true }: Props) {
