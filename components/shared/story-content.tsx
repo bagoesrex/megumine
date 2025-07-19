@@ -35,7 +35,7 @@ export default function StoryContent({
                 transition={{ duration: 0.7, ease: "easeOut" }}
                 className="transition-all"
             >
-                <SplitTextCustom text={title} duration={1.3} />
+                <SplitTextCustom text={title} duration={2} isWords={true} />
                 <BlurText
                     text={subtitle}
                     delay={10}

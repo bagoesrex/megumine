@@ -7,9 +7,10 @@ type Props = {
     text: string;
     showAfter?: number;
     duration?: number;
+    isWords: Boolean;
 };
 
-export default function SplitTextCustom({ text, showAfter = 0, duration = 1.5 }: Props) {
+export default function SplitTextCustom({ text, showAfter = 0, duration = 1.5, isWords = true }: Props) {
     const [shouldShow, setShouldShow] = useState(showAfter === 0)
 
     useEffect(() => {
@@ -29,7 +30,7 @@ export default function SplitTextCustom({ text, showAfter = 0, duration = 1.5 }:
             text={text}
             className="text-5xl text-primary font-extrabold overflow-visible text-shadow-md text-shadow-white"
             ease="elastic.out"
-            splitType="chars"
+            splitType={isWords ? "words" : "chars"}
             duration={duration}
         />
     )
