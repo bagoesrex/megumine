@@ -14,7 +14,7 @@ type Props = {
 export default function StoryContent({ title, subtitle, description, index, imageUrl }: Props) {
     return (
         <div className="w-full">
-            <SplitTextCustom text={title} />
+            <SplitTextCustom text={title} duration={1.3} />
             <BlurText
                 text={subtitle}
                 delay={10}

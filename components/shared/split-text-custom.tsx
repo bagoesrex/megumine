@@ -6,9 +6,10 @@ import SplitText from "../react-bits/TextAnimations/SplitText/SplitText"
 type Props = {
     text: string;
     showAfter?: number;
+    duration?: number;
 };
 
-export default function SplitTextCustom({ text, showAfter = 0 }: Props) {
+export default function SplitTextCustom({ text, showAfter = 0, duration = 1.5 }: Props) {
     const [shouldShow, setShouldShow] = useState(showAfter === 0)
 
     useEffect(() => {
@@ -29,7 +30,7 @@ export default function SplitTextCustom({ text, showAfter = 0 }: Props) {
             className="text-5xl text-primary font-extrabold overflow-visible text-shadow-md text-shadow-white"
             ease="elastic.out"
             splitType="chars"
-            duration={1.5}
+            duration={duration}
         />
     )
 }
