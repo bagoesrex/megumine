@@ -151,3 +151,120 @@ export const storyData = [
         imageUrl: "/images/story/meet.webp"
     },
 ]
+
+export const masonryData = [
+    {
+        id: "1",
+        img: "/images/masonry/1.webp",
+        url: "/images/masonry/1.webp",
+        height: 400,
+    },
+    {
+        id: "2",
+        img: "/images/masonry/2.webp",
+        url: "/images/masonry/2.webp",
+        height: 180,
+    },
+    {
+        id: "3",
+        img: "/images/masonry/3.webp",
+        url: "/images/masonry/3.webp",
+        height: 400,
+    },
+    {
+        id: "4",
+        img: "/images/masonry/4.webp",
+        url: "/images/masonry/4.webp",
+        height: 600,
+    },
+    {
+        id: "5",
+        img: "/images/masonry/5.webp",
+        url: "/images/masonry/5.webp",
+        height: 300,
+    },
+    {
+        id: "6",
+        img: "/images/masonry/6.webp",
+        url: "/images/masonry/6.webp",
+        height: 400,
+    },
+    {
+        id: "7",
+        img: "/images/masonry/7.webp",
+        url: "/images/masonry/7.webp",
+        height: 350,
+    },
+    {
+        id: "8",
+        img: "/images/masonry/8.webp",
+        url: "/images/masonry/8.webp",
+        height: 300,
+    },
+    {
+        id: "9",
+        img: "/images/masonry/9.webp",
+        url: "/images/masonry/9.webp",
+        height: 450,
+    },
+    {
+        id: "10",
+        img: "/images/masonry/10.webp",
+        url: "/images/masonry/10.webp",
+        height: 500,
+    },
+    {
+        id: "11",
+        img: "/images/masonry/11.webp",
+        url: "/images/masonry/11.webp",
+        height: 500,
+    },
+    {
+        id: "12",
+        img: "/images/masonry/12.webp",
+        url: "/images/masonry/12.webp",
+        height: 600,
+    },
+    {
+        id: "13",
+        img: "/images/masonry/13.webp",
+        url: "/images/masonry/13.webp",
+        height: 400,
+    },
+    {
+        id: "14",
+        img: "/images/masonry/14.webp",
+        url: "/images/masonry/14.webp",
+        height: 400,
+    },
+    {
+        id: "15",
+        img: "/images/masonry/15.webp",
+        url: "/images/masonry/15.webp",
+        height: 200,
+    },
+    {
+        id: "16",
+        img: "/images/masonry/16.webp",
+        url: "/images/masonry/16.webp",
+        height: 500,
+    },
+    {
+        id: "17",
+        img: "/images/masonry/17.webp",
+        url: "/images/masonry/17.webp",
+        height: 200,
+    },
+    {
+        id: "18",
+        img: "/images/masonry/18.webp",
+        url: "/images/masonry/18.webp",
+        height: 450,
+    },
+    {
+        id: "19",
+        img: "/images/masonry/19.webp",
+        url: "/images/masonry/19.webp",
+        height: 300,
+    },
+];
